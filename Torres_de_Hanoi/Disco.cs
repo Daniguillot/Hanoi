@@ -8,15 +8,10 @@ namespace Torres_de_Hanoi
 {
     class Disco
     {
-        /*TODO: 
-        Decidir tipo de Valor
-        public int Valor { get; set; }
-        public String Valor { get; set; }
-        */
+        public int Tam { get; set; }
+
+        public Disco(int tam) { this.Tam = tam; }
 
     }
 }
 
-}
-
-}
