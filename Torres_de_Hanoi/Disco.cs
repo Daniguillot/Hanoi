@@ -8,9 +8,15 @@ namespace Torres_de_Hanoi
 {
     class Disco
     {
-        public int Tam { get; set; }
+        public int Tam {
+            get { return this.Tam; } 
+            set { Tam = value; }
+        }
 
-        public Disco(int tam) { this.Tam = tam; }
+        public Disco(int tam) { 
+            
+            this.Tam = tam; 
+        }
 
     }
 }

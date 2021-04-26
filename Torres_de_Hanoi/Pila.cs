@@ -9,15 +9,25 @@ namespace Torres_de_Hanoi
     class Pila
     {
 
-        public int Size { get; set; }
-        public int Top { get; set; }       
+        public int Size {
+
+            get { return this.Elementos.Count; }
+            set { Size = value; }
+        }
+        public int Top {
+            get { return this.Elementos[this.Elementos.Count].Tam; }
+            set { Top = value; }
+        }       
         
-        public List<Disco> Elementos { get; set; }
+        public List<Disco> Elementos {
+            get { return this.Elementos; }
+            set { Elementos = value; }
+        }
 
         /* TODO: Implementar métodos */
         public Pila()
         {
-           
+            this.Elementos = { };
         }
 
         public void push(Disco d)
